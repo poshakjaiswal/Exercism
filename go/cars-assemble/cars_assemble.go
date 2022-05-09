@@ -18,7 +18,7 @@ func CalculateWorkingCarsPerMinute(productionRate int, successRate float64) int 
 func CalculateCost(carsCount int) uint {
 	//panic("CalculateCost not implemented")
 	batches := carsCount % 10
-	costOneCar := 95000
-	totalCost := ((carsCount-batches)*costOneCar)/10 + batches*10000
+	costOneCarBatchOfTen := 95000
+	totalCost := ((carsCount-batches)*costOneCarBatchOfTen)/10 + batches*10000
 	return uint(totalCost)
 }
